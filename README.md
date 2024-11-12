@@ -41,6 +41,10 @@ Run the script:
    ```bash
       ./setup_firebase.sh
 ```
+![](https://github.com/salginci/firebase_init/raw/main/assets/firebase_init1.png)
+
+![](https://github.com/salginci/firebase_init/raw/main/assets/firebase_init2.png)
+
 
 ## Usage Script Overview
 
