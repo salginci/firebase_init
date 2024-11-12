@@ -16,8 +16,9 @@ This script automates the setup of a Firebase project, tailored primarily for Fl
    ```bash
    sudo apt-get install jq   # For Debian/Ubuntu
    brew install jq           # For macOS
+   ```
 
-## Usage
+## firebase_config.env
 
 firebase_config.env: A .env file containing project-specific configurations in the same directory as the script. Example file content:
    ```bash
@@ -26,18 +27,19 @@ firebase_config.env: A .env file containing project-specific configurations in t
     ANDROID_PACKAGE_NAME="com.example.newapplication" # Android package name
     IOS_BUNDLE_ID="com.example.newapplication"  # iOS Bundle Id
     APP_DISPLAY_NAME="My New Application"   # Display name of the applciation
+   ```
 
-
+## firebase_config.env
 Clone or download this repository.
 Configure the firebase_config.env file as shown above with your project details.
 Make the script executable (if necessary):
-bash
    ```bash
 chmod +x setup_firebase.sh
+   ```
 Run the script:
    ```bash
       ./setup_firebase.sh
-
+```
 
 ## Usage Script Overview
 Environment Variables: Loads configurations from firebase_config.env.
@@ -46,5 +48,5 @@ Platform Setup: Adds and configures Android and iOS apps within the Firebase pro
 SDK Configuration: Downloads the necessary SDK files and saves them in the appropriate directories for Flutter.
 Note: For best compatibility, this script assumes a Flutter project structure, but can be modified for standalone Android or iOS projects.
 
-Troubleshooting
+## Troubleshooting
 If you encounter errors related to missing Firebase CLI or jq, double-check the prerequisites and ensure these dependencies are correctly installed and accessible.
