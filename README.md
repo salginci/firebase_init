@@ -43,11 +43,12 @@ Run the script:
 
 ## Usage Script Overview
 
-⋅⋅* Environment Variables: Loads configurations from firebase_config.env.
-⋅⋅* Project Check and Initialization: Creates a new Firebase project or links to an existing one.
-⋅⋅* Platform Setup: Adds and configures Android and iOS apps within the Firebase project.
-⋅⋅* SDK Configuration: Downloads the necessary SDK files and saves them in the appropriate directories for Flutter.
-⋅⋅* Note: For best compatibility, this script assumes a Flutter project structure, but can be modified for standalone Android or iOS projects.
+* **Environment Variables**: Loads configurations from `firebase_config.env`.
+* **Project Check and Initialization**: Creates a new Firebase project or links to an existing one.
+* **Platform Setup**: Adds and configures Android and iOS apps within the Firebase project.
+* **SDK Configuration**: Downloads the necessary SDK files and saves them in the appropriate directories for Flutter.
+
+> **Note**: For best compatibility, this script assumes a Flutter project structure, but can be modified for standalone Android or iOS projects.
 
 ## Troubleshooting
 If you encounter errors related to missing Firebase CLI or jq, double-check the prerequisites and ensure these dependencies are correctly installed and accessible.
