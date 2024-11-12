@@ -31,6 +31,7 @@ firebase_config.env: A .env file containing project-specific configurations in t
 
 ## firebase_config.env
 Clone or download this repository.
+Place files in root folder of your flutter project. 
 Configure the firebase_config.env file as shown above with your project details.
 Make the script executable (if necessary):
    ```bash
