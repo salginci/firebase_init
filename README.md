@@ -17,28 +17,29 @@ This script automates the setup of a Firebase project, tailored primarily for Fl
    sudo apt-get install jq   # For Debian/Ubuntu
    brew install jq           # For macOS
 
+## Usage
+
 firebase_config.env: A .env file containing project-specific configurations in the same directory as the script. Example file content:
-dotenv
-Copy code
-PROJECT_NAME="My New Application"
-PROJECT_ID="my-new-application"
-ANDROID_PACKAGE_NAME="com.example.newapplication"
-IOS_BUNDLE_ID="com.example.newapplication"
-APP_DISPLAY_NAME="My New Application"
+   ```bash
+    PROJECT_NAME="My New Application"  # Firebase Project Name 
+    PROJECT_ID="my-new-application"     # Project Id to create in firebase (Google GCP)
+    ANDROID_PACKAGE_NAME="com.example.newapplication" # Android package name
+    IOS_BUNDLE_ID="com.example.newapplication"  # iOS Bundle Id
+    APP_DISPLAY_NAME="My New Application"   # Display name of the applciation
 
 
-Usage
 Clone or download this repository.
 Configure the firebase_config.env file as shown above with your project details.
 Make the script executable (if necessary):
 bash
-Copy code
+   ```bash
 chmod +x setup_firebase.sh
 Run the script:
-bash
-Copy code
-./setup_firebase.sh
-Script Overview
+   ```bash
+      ./setup_firebase.sh
+
+
+## Usage Script Overview
 Environment Variables: Loads configurations from firebase_config.env.
 Project Check and Initialization: Creates a new Firebase project or links to an existing one.
 Platform Setup: Adds and configures Android and iOS apps within the Firebase project.
