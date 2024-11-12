@@ -42,6 +42,7 @@ Run the script:
 ```
 
 ## Usage Script Overview
+
 ⋅⋅*Environment Variables: Loads configurations from firebase_config.env.
 ⋅⋅*Project Check and Initialization: Creates a new Firebase project or links to an existing one.
 ⋅⋅*Platform Setup: Adds and configures Android and iOS apps within the Firebase project.
